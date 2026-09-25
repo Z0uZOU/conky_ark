@@ -240,7 +240,7 @@ fi
 
 SERVER_LIST_URL="https://cdn2.arkdedicated.com/servers/asa/officialserverlist.json"
 OUTPUT_DIR="$HOME/.conky"
-OUTPUT_FILE="$OUTPUT_DIR/$script_name.ext"
+OUTPUT_FILE="$OUTPUT_DIR/$script_name.games.ext"
 STATE_DIR="$script_folder/state"
 QUERY_TIMEOUT=10
 QUERY_ATTEMPTS=2
