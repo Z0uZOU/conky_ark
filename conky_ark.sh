@@ -1,6 +1,14 @@
 #!/bin/bash
 
 #######################
+## Scoony Fix because Ubuntu 22.04 doesn't use the proper version of nodejs, nodejs v16+ required
+## nodejs manual install required and "use" the installed version
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm use 24
+
+
+#######################
 ## Generating script variables and basics
 script_name=$(basename "$0" | cut -d'.' -f1)
 script_name_cap=${script_name^^}
